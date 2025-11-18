@@ -1,0 +1,197 @@
+.landing-page {
+  background: #eef3ff;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.landing-page header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 50px;
+  background: white;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.landing-page .logo {
+  font-weight: bold;
+  font-size: 20px;
+  color: #1a1a66;
+}
+
+.landing-page .login-btn {
+  background: #3728cc;
+  color: white;
+  padding: 6px 16px;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 14px;
+  text-decoration: none;
+  transition: background 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+.landing-page .login-btn:hover {
+  background: #2a1fb0;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(58, 42, 200, 0.3);
+}
+
+.landing-page .hero {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.landing-page .hero h1 {
+  font-size: 2.4em;
+  margin-bottom: 10px;
+}
+
+.landing-page .hero h1 span {
+  color: #4a3aff;
+}
+
+.landing-page .hero p {
+  max-width: 600px;
+  margin: 0 auto 20px;
+  font-size: 1em;
+  color: #333;
+}
+
+.landing-page .buttons {
+  margin: 20px 0;
+}
+
+.landing-page .buttons .landing-btn {
+  display: inline-block;
+  margin: 5px;
+  border-radius: 20px;
+  padding: 10px 20px;
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+  transition: background 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+.landing-page .landing-btn-primary {
+  background: #4a3aff;
+  color: white;
+}
+
+.landing-page .landing-btn-primary:hover {
+  background: #3728cc;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(58, 42, 200, 0.3);
+}
+
+.landing-page .landing-btn-secondary {
+  background: white;
+  color: #4a3aff;
+  border: 1px solid #ccc;
+}
+
+.landing-page .landing-btn-secondary:hover {
+  background: #f0f0ff;
+  color: #3728cc;
+  border-color: #3728cc;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(58, 42, 200, 0.3);
+}
+
+
+.landing-page .features {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin: 20px 0;
+}
+
+.landing-page .card {
+  background: white;
+  padding: 20px;
+  width: 250px;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.landing-page .card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+}
+
+.landing-page .card i {
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+.landing-page .stats {
+  margin: 80px 0;
+  text-align: center;
+}
+
+.landing-page .stat-box {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  flex-wrap: wrap;
+}
+
+.landing-page .stat {
+  font-size: 20px;
+  font-weight: bold;
+  color: #4a3aff;
+}
+
+.landing-page .stat small {
+  display: block;
+  font-weight: normal;
+  color: #333;
+  margin-top: 5px;
+}
+
+.landing-page footer {
+  background: #111a2b;
+  color: white;
+  padding: 20px;
+  font-size: 13px;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .landing-page header {
+    padding: 15px 20px;
+  }
+  .landing-page .hero h1 {
+    font-size: 22px;
+  }
+  .landing-page .hero p {
+    font-size: 13px;
+  }
+  .landing-page .stat-box {
+    gap: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .landing-page .hero {
+    padding: 30px 15px;
+  }
+  .landing-page .hero h1 {
+    font-size: 20px;
+  }
+  .landing-page .hero p {
+    font-size: 12px;
+  }
+  .landing-page .stat-box {
+    flex-direction: column;
+    gap: 15px;
+  }
+  .landing-page .card {
+    width: 100%;
+  }
+}
