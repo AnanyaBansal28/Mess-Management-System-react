@@ -1,0 +1,52 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 300;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  background: #f9fafb;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #fff;
+  padding: 16px 50px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+  flex-wrap: nowrap;
+}
+.navbar-left {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.logo {
+  font-weight: 600;
+  font-size: 20px;
+  color: #333;
+  display: flex;
+  align-items: center;
+}
+.logo i {
+  margin-right: 8px;
+  color: #4f46e5;
+}
+.student-portal {
+  background: #eef2ff;
+  color: #3b82f6;
+  padding: 4px 14px;
+  border-radius: 18px;
+  font-size: 13px;
+  font-weight: 500;
+}
+.navbar-right {
+  font-size: 14px;
+  color: #374151;
+}
+.navbar-right a {
+  margin-left: 16px;
+  text-decoration: none;
+  color: #374151;
+  font-weight: 500;
+}

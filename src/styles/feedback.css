@@ -1,0 +1,30 @@
+.card { background: #fff; border-radius: 20px; box-shadow: 0 2px 8px rgba(0,0,0,0.05); margin: 25px auto; padding: 25px; max-width: 950px; }
+.card-header { font-size: 17px; font-weight: 600; color: #111; margin-bottom: 18px; display: flex; align-items: center; gap: 8px; }
+.card-header i { color: #712db1; }
+
+.stars { display: flex; flex-direction: row-reverse; justify-content: left; gap: 5px; margin: 10px 0; }
+.stars input { display: none; }
+.stars label { font-size: 30px; color: #d1d5db; cursor: pointer; transition: color 0.2s; }
+.stars label:hover, .stars label:hover ~ label { color: #facc15; }
+.stars input:checked ~ label { color: #facc15; }
+
+.comment-box { width: 100%; min-height: 80px; border: none; border-radius: 12px; padding: 12px; background: #f3f4f6; font-size: 14px; margin: 15px 0; resize: none; outline: none; font-family: inherit; }
+.submit-btn { display: block; width: 100%; padding: 10px 12px; background: #8945e8; color: #fff; font-weight: 500; font-size: 15px; text-align: center; border: none; border-radius: 12px; cursor: pointer; transition: background 0.3s; }
+.submit-btn:hover { background: #7834d1; }
+
+.feedback-item { background: #f9fafb; padding: 15px; border-radius: 12px; margin-bottom: 12px; font-size: 14px; position: relative; }
+.feedback-item .stars { font-size: 16px; margin-bottom: 6px; flex-direction: row; }
+.feedback-item .stars i.active { color: #facc15; }
+.feedback-item .date { position: absolute; top: 12px; right: 16px; font-size: 13px; color: #6b7280; }
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .card { width: 90%; padding: 20px; }
+}
+@media (max-width: 768px) {
+  .tabs { flex-direction: row; justify-content: space-around; gap: 20px; padding: 10px; }
+}
+@media (max-width: 480px) {
+  .card { padding: 15px; width: 95%; }
+  .tabs { flex-direction: column; width: 95%; text-align: center; gap: 15px; padding: 15px; }
+}
