@@ -1,18 +1,35 @@
-import "../styles/navbar.css";   // ⬅️ updated path
+import React from "react";
 import { Link } from "react-router-dom";
+import "../styles/navbar.css";
 
 export default function Navbar() {
   return (
-    <div className="navbar">
+    <header className="site-navbar">
       <div className="navbar-left">
-        <div className="logo"><i className="fas fa-utensils"></i> UMESS</div>
-        <div className="student-portal">Student Portal</div>
+        <div className="brand">
+          <span className="brand-icon">🍽️</span>
+          <span className="brand-text">UMESS</span>
+          <span className="role-pill">Administrator</span>
+        </div>
+
+        <nav className="main-links" aria-label="Main navigation">
+          <Link to="/">Attendance</Link>
+          <Link to="/inventory">Inventory</Link>
+          <Link to="/feedback">Feedback</Link>
+        </nav>
       </div>
 
       <div className="navbar-right">
-        Welcome, Ananya Bansal
-        <a href="#"><i className="fas fa-sign-out-alt"></i> Logout</a>
+        <button
+          className="logout-btn"
+          onClick={() => {
+            /* replace with real logout later */
+            alert("Logout clicked");
+          }}
+        >
+          ↪ Logout
+        </button>
       </div>
-    </div>
+    </header>
   );
 }
